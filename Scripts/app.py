@@ -354,11 +354,11 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://az3.ondemand.esker.com/ondemand/webaccess/asf/home.aspx")
+driver.get("https:///webaccess/asf/home.aspx")
 driver.maximize_window()
 time.sleep(1)
 
-driver.find_element(By.XPATH, '//*[@id="ctl03_tbUser"]').send_keys("john.tan@sh-cogent.com.sg")
+driver.find_element(By.XPATH, '//*[@id="ctl03_tbUser"]').send_keys("sg")
 driver.find_element(By.XPATH, '//*[@id="ctl03_tbPassword"]').send_keys("YOUR_PASSWORD")
 driver.find_element(By.XPATH, '//*[@id="ctl03_btnSubmitLogin"]').click()
 time.sleep(5)
